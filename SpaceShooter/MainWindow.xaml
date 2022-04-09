@@ -1,0 +1,14 @@
+﻿<Window x:Class="SpaceShooter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpaceShooter"
+        mc:Ignorable="d"
+        Title="Space Shooter" Height="637" Width="554">
+    <Canvas Name="SpielCanvas" Focusable="True" Background="Black" KeyDown="OnKeyDown" KeyUp="OnKeyUp">
+        <Rectangle Name="Player" Height="50"  Width="60" Fill="Yellow" RenderTransformOrigin="0.837,0.791" Canvas.Left="240" Canvas.Top="521"/>
+        <Label Name="lblScoreText"  Content="Score: 0" FontSize="18" FontWeight="Bold" Foreground="White" Canvas.Left="10"/>
+        <Label Name="lblDamageText"  Content="Score: 0" FontSize="18" FontWeight="Bold" Foreground="White" Canvas.Left="395" Canvas.Top="10"/>
+    </Canvas>
+</Window>
